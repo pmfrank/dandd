@@ -52,6 +52,6 @@ while player.attribute['hp'] > 0 and enemy.attribute['hp'] > 0:
         pass
 
 if player.attribute['hp'] <= 0:
-    print('Unfortunately, this is were you life comes to an end solder. You will be remembered in the songs by your brothers in faith.')
+    print('Unfortunately, this is where you life comes to an end solder. You will be remembered in the songs by your brothers in faith.')
 else:
     print('The foul beast falls to your feet with a dull, sickening thud. You steel yourself for what will come next as you venture forth.')
