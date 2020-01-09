@@ -1,4 +1,4 @@
-import beingc
+import being
 from dice import dice_roll
 
 player = being.Character(name = 'Paladin', strength = 16, dexterity = 10, constitution = 14, intelligence = 11, wisdom = 14, charisma = 14, ac = 19, speed = 30, hp = 28)
