@@ -1,5 +1,4 @@
-import being
-from readchar import readchar
+import beingc
 from dice import dice_roll
 
 player = being.Character(name = 'Paladin', strength = 16, dexterity = 10, constitution = 14, intelligence = 11, wisdom = 14, charisma = 14, ac = 19, speed = 30, hp = 28)
@@ -15,9 +14,9 @@ hope that you encounter none of the that nonsense here. Your hopes are dashed as
 light. It's low, gutteral moan tells you that you are about to face off with one of the Salvones that didn't get a dignified unlife, this
 is a zombie. You draw your longsword and prepare for battle.
 
-Press any key to start the fight
+Press enter key to start the fight
 ''')
-readchar()
+input()
 
 allowedactions = ['attack']
 
