@@ -32,13 +32,13 @@ while player.attribute['hp'] > 0 and enemy.attribute['hp'] > 0:
     if command.lower().strip() in allowedactions:
         attackroll = dice_roll(1,20) + player.modifier['strength'] + player.profbonus
         if attackroll >= enemy.attribute['ac']:
-            print('Your long sword strike the zombie and cuts deep')
+            print(f'Your long sword strikes the {enemy.creature} and cuts deep')
             damage = dice_roll(1,8) + player.modifier['strength']
             print(f'You do {damage} points of damage to the {enemy.creature}')
             enemy.attribute['hp'] = enemy.attribute['hp'] - damage
         else:
             print(f'Your attack has failed to hit the {enemy.creature}.')
-            print(f'The {enemy.creature} comes with a visious attack')
+        print(f'The {enemy.creature} comes with a visious attack')
         attackroll = dice_roll(1,20) + enemy.profbonus + enemy.modifier['strength']
         if attackroll >= player.attribute['ac']:
             print(f'The {enemy.creature} has struck you')
